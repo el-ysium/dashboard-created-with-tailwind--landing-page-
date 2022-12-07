@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/2ed2e6d3b4.js"></script>
+</head>
+<body class=" flex font-Poppins ">
+    <!-- navigation -->
+    <div id="navigation" class="lg:flex flex-col sm:-left-96 bg-darkblue py-10 pl-10 pr-32 h-full absolute lg:left-0">
+        <div class="w-10 flex-row flex space-x-2 text-white font-bold ">
+            <img src="images/logo.png" class="h-10" alt="">
+            <h1 class=" text-3xl pb-14"> Dynamic </h1>
+            <i class="fa-solid fa-circle-xmark -mt-6 text-xl" onclick="closeNav()"></i>
+        </div>
+        <!-- list items -->
+            <div class="flex flex-col text-lg text-gray-400 list-none space-y-8 ">
+                <li> <i class="fa-solid fa-chart-pie text-3xl mr-2"></i> <a href="">Dashboard</a></li>
+                <li><i class="fa-brands fa-uikit text-3xl mr-2 "></i><a href="">Elements</a></li>
+                <li><i class="fa-solid fa-table-cells-large text-3xl mr-2"></i><a href="">Tables</a></li>
+                <li><i class="fa-solid fa-pen-to-square text-3xl mr-2"></i><a href="">Forms</a></li>
+                <li><i class="fa-brands fa-cc-visa text-3xl mr-2"></i><a href="">Cards</a></li>
+                <li><i class="fa-solid fa-burger text-3xl mr-2"></i><a href="">Modal</a></li>
+                <li><i class="fa-solid fa-chart-line text-3xl mr-2"></i><a href="">Blank</a></li>
+            </div>
+    </div>
+
+    <!-- interface -->
+    <div class="flex flex-1  flex-col bg-grey">
+        <!-- small nav -->
+        <div class="flex flex-row border-b-2 max-w-full border-blue-500 p-3 justify-between bg-white">
+            <!-- search icon and navbar -->
+            <div class="flex flex-row border-solid  ">
+                <div class="block md:hidden mt-2 mr-3 text-xl">
+                    <i class="fa-solid fa-bars" onclick="openNav()" ></i>
+                </div>
+
+                <div class="text-sm border-2 border-gray-400 p-2 rounded-lg px-4 ">
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                    <input type="text" class="border-none outline-none" placeholder="Search">
+                </div>
+            </div>
+
+
+            <!-- profile -->
+            <div class=" flex justify-items-start space-x-4">
+                <i class="fa-solid fa-bell icon text-lg mt-2"></i>
+                <img src="images/1.jpg" class="rounded-full w-10 h-11" alt="">
+            </div>
+        </div>
+
+        <!-- dashboard -->
+      <div class="flex flex-col py-7 px-5">
+            <!-- heading -->
+            <h1 class="text-2xl font-bold text-gray-700 pb-7 ">
+                Dashboard
+            </h1>
+        
+        <!-- cards container -->
+        <div class="grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- cards -->
+            <div class="flex flex-row my-5 lg:my-0  py-5 pl-5 pr-10 bg-white shadow-lg rounded-lg space-x-3 mr-0 md:mr-5   ">
+                <div class="flex p-3 h-12  bg-purple rounded-full text-white text-xl">
+                 <i class="fa-solid fa-users icon "></i>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold">8,267</h3>
+                    <span class="text-gray-400">New Users</span>
+                </div>    
+            </div>
+
+            <!-- card 2 -->
+
+            <div class="flex flex-row my-5 lg:my-0   py-5 pl-5 pr-10 bg-white shadow-lg rounded-lg space-x-3 mr-0 lg:mr-5">
+                <div class="flex p-3  bg-lightpurple rounded-full text-white h-12 text-xl">
+                    <i class="fa-solid fa-cart-shopping icon"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold">200, 521</h3>
+                    <span class="text-gray-400"> Total Orders</span>
+                </div>    
+            </div>
+
+            <!-- card 3 -->
+            <div class="flex flex-row my-5  lg:my-0   py-5 pl-5 pr-10 bg-white shadow-lg rounded-lg space-x-3 mr-0 md:mr-5">
+                <div class="flex p-3  bg-lightpink rounded-full h-12 text-white text-xl">
+                    <i class="fa-solid fa-store icon"></i> 
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold">215,542</h3>
+                    <span class="text-gray-400">Products Sold</span>
+                </div>    
+            </div>
+
+            <!-- card 4 -->
+            <div class="flex flex-row my-5  lg:my-0  py-5 pl-5 pr-10 bg-white shadow-lg rounded-lg space-x-3 mr-0 lg:mr-5 ">
+                <div class="flex py-3 px-4 bg-cyan-300 h-12 rounded-full text-white text-xl">
+                    <i class="fa-solid fa-dollar-sign icon"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold">$677.89</h3>
+                    <span class="text-gray-400">This Month</span>
+                </div>    
+            </div>
+        </div>
+     </div>
+
+     <!-- table -->
+
+     <div class=" mx-5 bg-white rounded-lg">
+        <table class="lg:w-full w-5/6 ">
+            <div class=" ">
+                <thead class=" ">
+                     <tr class="font-semibold uppercase border-b-2 border-b-grey  bg-dirtywhite text-sm  ">
+                        <td class="pl-5 py-2 pr-2 " >Name</td>
+                        <td class="p-2 ">Title</td>
+                        <td class="p-2 ">Status</td>
+                        <td class="p-2">Role</td>
+                    </tr>
+                </thead>
+            </div>
+            <tbody>
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/1.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">John Doe</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/2.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">Oscar Rhys</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/3.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">George Reece</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/4.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">Thomas Joe</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/5.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">Charlie Kyle</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/6.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">Jacob Jacob</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/1.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">John Doe</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/1.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">John Doe</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+
+                <tr class="border-b-2 border-b-grey">
+                    <td class=" flex pl-5 text-sm py-2">
+                        <img src="images/1.jpg" class="w-14 h-14 rounded-full mr-3" alt="" >
+                        <div class="text-md ">
+                            <h5 class="font-bold mt-2">John Doe</h5>
+                            <p class="text-gray-500">john@example.com</p>
+                        </div>
+                    </td>
+                    <td class="text-sm">
+                        <h5 class="font-bold">Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+
+                    <td>
+                        <p class="bg-green-200 px-2 w-16 rounded-3xl text-gray-500 text-sm">Active</p>
+                    </td>
+                    <td class="role text-sm">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit text-sm text-purple font-bold">
+                        <a href="">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>       
+    </div>
+    
+    <script>
+        /* Open the sidenav */
+        function openNav() {
+          document.getElementById("navigation").style.display = "block";
+        }
+        
+        /* Close/hide the sidenav */
+        function closeNav() {
+          document.getElementById("navigation").style.display = "none";
+        }
+    </script>  
+</body>
+</html>
